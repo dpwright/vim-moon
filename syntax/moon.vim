@@ -20,6 +20,9 @@ syn match   moonNumber          "\([0-9]*\.\)\?[0-9]\+"
 syn match   moonName            "[A-Z][a-zA-Z0-9_]*"
 syn match   moonIdentifier      "[a-z_][a-zA-Z0-9_]*"
 
+syn match   moonParen           contained "("
+syn match   moonFunction        "[a-z_][a-zA-Z0-9_]*\s*(" contains=moonParen
+
 hi def link moonStatement       Statement
 hi def link moonPreProc         PreProc
 hi def link moonType            Type
@@ -27,3 +30,4 @@ hi def link moonLineComment     Comment
 hi def link moonBlockComment    Comment
 hi def link moonString          Constant
 hi def link moonNumber          Constant
+hi def link moonFunction        Function
