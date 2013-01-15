@@ -15,6 +15,7 @@ syn match   moonLineComment     "#.*$"
 syn region  moonBlockComment    start="-#-" end="-#-"
 
 syn region  moonString          start=+"+ end=+"+
+syn match   moonStringLength    "<[0-9]\+>"
 
 syn match   moonNumber          "\([0-9]*\.\)\?[0-9]\+"
 syn match   moonName            "[A-Z][a-zA-Z0-9_]*"
@@ -34,6 +35,7 @@ hi def link moonType            Type
 hi def link moonLineComment     Comment
 hi def link moonBlockComment    Comment
 hi def link moonString          Constant
+hi def link moonStringLength    Special
 hi def link moonNumber          Constant
 hi def link moonFunction        Function
 hi def link moonState           Special
