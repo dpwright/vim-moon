@@ -6,8 +6,11 @@ if exists("b:current_syntax")
   finish
 endif
 
-syn keyword moonStatement return null true false end global
-syn keyword moonStatement shared const var ref function return state reset
+syn keyword moonStatement null true false
+syn keyword moonStatement global shared const var ref
+syn keyword moonStatement function end
+syn keyword moonStatement return state reset
+
 syn keyword moonPreProc   include use 
 syn keyword moonType      bool int float string
 
