@@ -35,8 +35,9 @@ syn match   moonState           "<[A-Z][a-zA-Z0-9_]*>"
 hi def link moonStatement       Statement
 hi def link moonPreProc         PreProc
 hi def link moonType            Type
-hi def link moonLineComment     Comment
-hi def link moonBlockComment    Comment
+hi def link moonComment         Comment
+hi def link moonLineComment     moonComment
+hi def link moonBlockComment    moonComment
 hi def link moonString          Constant
 hi def link moonStringLength    Special
 hi def link moonNumber          Constant
