@@ -17,6 +17,8 @@ syn region  moonBlockComment    start="-#-" end="-#-"
 syn region  moonString          start=+"+ end=+"+
 
 syn match   moonNumber          "\([0-9]*\.\)\?[0-9]\+"
+syn match   moonName            "[A-Z][a-zA-Z0-9_]*"
+syn match   moonIdentifier      "[a-z_][a-zA-Z0-9_]*"
 
 hi def link moonStatement       Statement
 hi def link moonPreProc         PreProc
