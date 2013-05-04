@@ -10,6 +10,7 @@ syn keyword moonStatement null true false
 syn keyword moonStatement global shared const var ref
 syn keyword moonStatement function end
 syn keyword moonStatement return state reset
+syn keyword moonStatement if while
 
 syn keyword moonPreProc   include use 
 syn keyword moonType      bool int float string
