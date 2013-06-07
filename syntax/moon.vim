@@ -6,6 +6,8 @@ if exists("b:current_syntax")
   finish
 endif
 
+let b:current_syntax = "moon"
+
 syn keyword moonStatement null true false
 syn keyword moonStatement global shared const var ref
 syn keyword moonStatement function end
